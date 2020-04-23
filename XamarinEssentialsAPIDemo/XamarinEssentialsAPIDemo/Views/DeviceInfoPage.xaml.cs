@@ -17,10 +17,38 @@ namespace XamarinEssentialsAPIDemo.Views
         {
             InitializeComponent();
 
+            // Device Model (SMG-950U, iPhone10,6)
+            var device = DeviceInfo.Model;
+
+            // Manufacturer (Samsung)
+            var manufacturer = DeviceInfo.Manufacturer;
+
+            // Device Name (Motz's iPhone)
+            var deviceName = DeviceInfo.Name;
+
+            // Operating System Version Number (7.0)
+            var version = DeviceInfo.VersionString;
+
+            // Platform (Android)
+            var platform = DeviceInfo.Platform;
+
+            // Idiom (Phone)
+            var idiom = DeviceInfo.Idiom;
+
             // Device Type (Physical)
             var deviceType = DeviceInfo.DeviceType;
 
-            //LabelDeviceInfo.Text = $"{deviceName} {version} {platform}";
+            if(platform == DevicePlatform.Android)
+            {
+                // do something for android here
+            }
+
+            if(idiom == DeviceIdiom.Tablet)
+            {
+                // if on tablet do something
+            }
+
+            LabelDeviceInfo.Text = $"{deviceName} {version} {platform} {manufacturer}";
             LabelDeviceDisplay.Text = DeviceDisplay.MainDisplayInfo.ToString();
 
         }

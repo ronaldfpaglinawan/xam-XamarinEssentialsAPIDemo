@@ -15,6 +15,7 @@
                    VerticalOptions="Center"
                    HorizontalOptions="CenterAndExpand"
                    TextColor="Black"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
