@@ -11,7 +11,7 @@ namespace XamarinEssentialsAPIDemo
         {
             InitializeComponent();
 
-            MainPage = new GeolocationPage();
+            MainPage = new DeviceInfoPage();
         }
 
         protected override void OnStart()
