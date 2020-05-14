@@ -11,7 +11,7 @@ namespace XamarinEssentialsAPIDemo
         {
             InitializeComponent();
 
-            MainPage = new DeviceInfoPage();
+            MainPage = new FlashlightPage();
         }
 
         protected override void OnStart()
